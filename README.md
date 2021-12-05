@@ -14,6 +14,18 @@
 xcode-select --install
 ```
 
+## Atom
+### Install
+### Configure
+#### Script
+```
+apm install script
+```
+#### Terminal
+```
+apm install platformio-ide-terminal
+```
+
 ## Brew
 ### Install
 ```
@@ -61,16 +73,4 @@ python3 -m pip install --upgrade pip
 #### setuptools
 ```
 python3 -m pip install --upgrade setuptools
-```
-
-## Atom
-### Install
-### Configure
-#### Script
-```
-apm install script
-```
-#### Terminal
-```
-apm install platformio-ide-terminal
 ```
