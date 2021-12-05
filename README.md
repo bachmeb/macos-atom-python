@@ -74,3 +74,32 @@ python3 -m pip install --upgrade pip
 ```
 python3 -m pip install --upgrade setuptools
 ```
+## Code
+### Create repo
+```
+mkdir -p ~/Projects/git/hub/bachmeb/macos-atom-python
+cd $_
+pwd
+git init
+```
+### Add project to Atom
+* File > Add Project Folder
+  *  ~/Projects/git/hub/bachmeb/macos-atom-python
+
+### Create python code
+* Select project name > a
+  * ./hello.py
+```
+print('hello')
+```
+### Run python in script window
+* Packages > Script > Run Script
+> ```
+> hello
+> [Finished in 0.43s]
+### Run python code in Terminal
+```
+python hello.py
+```
+> ```
+> hello
