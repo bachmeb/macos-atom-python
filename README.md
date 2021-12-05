@@ -3,6 +3,16 @@
 * https://brew.sh
 * https://atom.io
 * https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+* https://stackoverflow.com/questions/52522565/git-is-not-working-after-macos-update-xcrun-error-invalid-active-developer-pa
+
+## macOS
+### Install
+* System Preferences > Software Update
+  * Install macOS Monterey 12.0.1
+### Configure
+```
+xcode-select --install
+```
 
 ## Brew
 ### Install
@@ -18,23 +28,32 @@ brew install git
 ### Configure
 ```
 git config --list --show-origin
-```
-```
 git config --global user.name "Mona Lisa"
-```
-```
 git config --global user.email mona@lisa.tld
-```
-```
 git config --global init.defaultBranch main
 ```
 
 ## Python3
 ### Install
 ```
-brew install python
+brew install pyenv
+pyenv install -1
+pyenv install 3.10.0
 ```
 ### Configure
+#### pyenv
+```
+pyenv global 3.10.0
+pyenv version
+cat ~/.zshrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+cat ~/.zshrc
+PATH=$(pyenv root)/shims:$PATH
+python --version
+echo 'PATH=$(pyenv root)/shims:$PATH' >> ~/.zshrc
+python --version
+which python
+```
 #### pip
 ```
 python3 -m pip install --upgrade pip
