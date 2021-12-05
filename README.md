@@ -92,6 +92,9 @@ git init
 ```
 print('hello')
 ```
+### Save
+* File > Save (Atom does not auto-save by default)
+
 ### Run python in script window
 * Packages > Script > Run Script
 > ```
@@ -103,3 +106,11 @@ python hello.py
 ```
 > ```
 > hello
+### Commit and push code
+```
+git add hello.py
+git commit
+git push
+```
+### Open on GitHub
+* Packages > Open on GitHub > File
